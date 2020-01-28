@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SafeActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/sim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="SIM卡"
+            android:textColor="#000000"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/numbercast"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="手机防盗"
+            android:textColor="#000000"
+            android:textSize="20dip" />
+        <TextView
+            android:id="@+id/phoneprotect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="号码绑定"
+            android:textColor="#000000"
+            android:textSize="20dip" />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/linearLayout"
+        android:id="@+id/scrollbar"
+        android:scaleType="matrix" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/scrollbar">
+    </androidx.viewpager.widget.ViewPager>
+</RelativeLayout>

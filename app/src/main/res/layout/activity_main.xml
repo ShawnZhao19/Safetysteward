@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <Button
+        android:onClick="calculate"
+        android:id="@+id/bt_main_calculator"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/calculator"
+        android:text="计算器"
+        />
+
+    <Button
+        android:onClick="safe"
+        android:id="@+id/bt_main_safe"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/safe"
+        android:layout_toRightOf="@id/bt_main_calculator"
+        android:text="手机防盗" />
+
+    <Button
+        android:onClick="number"
+        android:id="@+id/bt_main_number"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/number"
+        android:layout_toRightOf="@id/bt_main_safe"
+        android:text="号码归属查询" />
+    <Button
+        android:onClick="message"
+        android:id="@+id/bt_main_message"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/message"
+        android:layout_marginTop="135dp"
+        android:text="信息备份" />
+    <Button
+        android:onClick="software"
+        android:id="@+id/bt_main_software"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/software"
+        android:layout_marginTop="135dp"
+        android:layout_toRightOf="@id/bt_main_message"
+        android:text="软件管理" />
+    <Button
+        android:onClick="process"
+        android:id="@+id/bt_main_process"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/process"
+        android:layout_marginTop="135dp"
+        android:layout_toRightOf="@id/bt_main_software"
+        android:text="进程管理" />
+    <Button
+        android:onClick="progress"
+        android:id="@+id/bt_main_progress"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/moresettings"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="270dp"
+        android:text="版本检查与更新" />
+
+    <ProgressBar
+    android:id="@+id/pb_main_loading"
+    android:layout_width="120dp"
+    android:layout_height="140dp"
+    android:layout_marginTop="435dp"
+    android:layout_marginLeft="120dp"/>
+
+    <TextView
+        android:id="@+id/tx_main_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="580dp"
+        android:layout_marginLeft="52dp"
+        android:textSize="23dp"
+        android:text="安全管家正在保护您的系统" />
+
+</RelativeLayout>
