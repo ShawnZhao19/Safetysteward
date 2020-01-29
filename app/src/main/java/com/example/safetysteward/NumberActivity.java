@@ -43,7 +43,7 @@ public class NumberActivity extends AppCompatActivity{
     public static final int DEF_CONN_TIMEOUT = 30000;
     public static final int DEF_READ_TIMEOUT = 30000;
 
-    public static final String APPKEY ="a576f6978a75ef56709cf16b3b163bf4";
+    public static final String APPKEY ="*****************************";
     @SuppressLint("HandlerLeak")
     Handler handler = new Handler(){
         @SuppressLint("SetTextI18n")
